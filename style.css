@@ -355,6 +355,51 @@ nav ul li a {
   margin-bottom: 3rem;
 }
 
+/* Certificates */
+#certificates {
+  padding: 6rem 0;
+}
+
+.certificates .pre-title {
+  margin: 0 auto;
+}
+
+.certificates .section-title {
+  text-align: center;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.certificate-card {
+  overflow: hidden;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--itemBorderRadius);
+  background: var(--primaryBackgroundColor);
+}
+
+.certificate-placeholder,
+.certificate-card img {
+  display: flex;
+  width: 100%;
+  height: 180px;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  background: var(--thirdBackgroundColor);
+  color: var(--secondaryTextColor);
+  text-align: center;
+  padding: 1rem;
+}
+
+.certificate-card h4 {
+  padding: 1rem;
+  font-weight: 500;
+}
+
 /* The dot on the line */
 .education .line div:before {
   content: "";
@@ -480,8 +525,26 @@ footer {
   fill: #000;
 }
 
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-bottom: 1rem;
+}
 
-/* RESPONSIVE */
+.footer-links a {
+  color: var(--primaryTextColor);
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.footer-links a:hover {
+  color: var(--primaryIconColor);
+}
+
+
+/* Responsive */
 
 @media screen and (max-width: 1000px) {
   p {
